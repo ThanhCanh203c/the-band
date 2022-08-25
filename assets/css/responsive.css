@@ -1,0 +1,70 @@
+@media (max-width: 768px) {
+    html {
+        font-size: 75%;
+    }
+    /* HEADER */
+    #header { 
+    }
+
+    .hide-on-mobile {
+        display: none!important;
+    }
+
+    .display-on-mobile {
+        display: block!important;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .menu-btn {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .nav-list__item {
+        background-color: var(--primary-color);
+        display: none;
+    }
+
+    .nav-list .nav-list__item a{
+        height: var(--header-height);
+        line-height: var(--header-height);
+        padding: 0 2.4rem;
+        width: 100%;
+    }
+
+    .nav-list .nav-list__item:first-child {
+        display: block;
+        width: 10rem;
+    }
+
+    /* Band, Tour */
+    .band__member,
+    .tour__places  {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        margin-top: 1.6rem;
+    }
+
+    /* CONTACT */
+    .contact-body {
+        flex-direction: column;
+    }
+
+    .contact-form div {
+        flex-direction: column;
+    }
+
+    .contact-form input {
+        margin: .4rem 0;
+    }
+}

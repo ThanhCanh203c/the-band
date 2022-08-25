@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Band</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/img/favicon/favicon.png" type="image/x-icon">
+    <!-- Font Aweasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="app">
+
+        <!-- HEADER -->
+        <div id="header">
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-list__item__link">Home</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#band" class="nav-list__item__link">Band</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#tour" class="nav-list__item__link">Tour</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#contact" class="nav-list__item__link">Contact</a>
+                    </li>
+                    <li class="nav-list__item hide-on-mobile">
+                        <a href="" class="nav-list__item__link">
+                            More
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                        <nav class="subnav">
+                            <ul class="subnav-list">
+                                <li class="subnav-list__item"><a href="" class="subnav-list__item__link">Merchandise</a>
+                                </li>
+                                <li class="subnav-list__item"><a href="" class="subnav-list__item__link">Extras</a></li>
+                                <li class="subnav-list__item"><a href="" class="subnav-list__item__link">Media</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                </ul>
+
+            </nav>
+            <button class="header__search-btn hide-on-mobile">
+                <i class="fa-solid fa-magnifying-glass hide-on-mobile"></i>
+            </button>
+            <i class="menu-btn fa-solid fa-bars"></i>
+        </div>
+
+        <!-- SLIDER -->
+        <div id="slider">
+            <div class="slider__img-container">
+                <img src="./assets/img/slider/chicago.jpg" alt="" class="slider__img">
+            </div>
+            <div class="slider-content hide-on-mobile">
+                <h4 class="slider__heading">Chicago
+                    <h4 />
+                    <p class="slider__desc">Thank you, Chicago - A night we won't forget.</p>
+            </div>
+        </div>
+
+        <!-- CONTENT -->
+        <div id="content">
+            <!-- BAND -->
+            <div id="band">
+                <h3 class="content__heading">THE BAND</h3>
+                <p class="content__description">We love music</p>
+                <p class="content__paragraph">We have created a fictional band website. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est
+                    laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+
+                <div class="band__member">
+                    <div class="band__member__item">
+                        <p class="band__member__item__name">Name</p>
+                        <img src="./assets/img/band/bandmember.jpg" alt="Band member image"
+                            class="band__member__item__img">
+                    </div>
+                    <div class="band__member__item">
+                        <p class="band__member__item__name">Name</p>
+                        <img src="./assets/img/band/bandmember.jpg" alt="Band member image"
+                            class="band__member__item__img">
+                    </div>
+                    <div class="band__member__item">
+                        <p class="band__member__item__name">Name</p>
+                        <img src="./assets/img/band/bandmember.jpg" alt="Band member image"
+                            class="band__member__item__img">
+                    </div>
+                </div>
+            </div>
+
+            <!-- TOUR -->
+            <div class="tour-container">
+                <div id="tour">
+                    <h3 class="content__heading">TOUR DATES</h3>
+                    <p class="content__description">Remember to book your tickets!</p>
+
+                    <ul class="tour__dates">
+                        <li class="tour__dates-item">
+                            September
+                            <span class="sold-out">Sold out</span>
+                        </li>
+                        <li class="tour__dates-item">
+                            October
+                            <span class="sold-out">Sold out</span>
+                        </li>
+                        <li class="tour__dates-item">
+                            November
+                            <span class="quantity">3</span>
+                        </li>
+                    </ul>
+
+                    <div class="tour__places">
+                        <div class="card">
+                            <img src="./assets/img/tour/newyork.jpg" alt="" class="card__img">
+                            <div class="card__content">
+                                <h4 class="card__name">New York</h4>
+                                <p class="card__date">Fri 27 Nov 2016</p>
+                                <p class="card__desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="btn buy-btn">Buy Tickets</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="./assets/img/tour/paris.jpg" alt="" class="card__img">
+                            <div class="card__content">
+                                <h4 class="card__name">Paris</h4>
+                                <p class="card__date">Sat 28 Nov 2016</p>
+                                <p class="card__desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="btn buy-btn">Buy Tickets</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="./assets/img/tour/sanfran.jpg" alt="" class="card__img">
+                            <div class="card__content">
+                                <h4 class="card__name">San Francisco</h4>
+                                <p class="card__date">Sun 29 Nov 2016</p>
+                                <p class="card__desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="btn buy-btn">Buy Tickets</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTACT -->
+            <div id="contact">
+                <h3 class="content__heading">CONTACT</h3>
+                <p class="content__description">Fan? Drop a note!</p>
+
+                <div class="contact-body">
+                    <div class="contact-body__info">
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Chicago, US</p>
+                        </div>
+
+                        <div class="phone">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>Phone: +00 151515</p>
+                        </div>
+
+                        <div class="email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p> Email: mail@mail.com</p>
+                        </div>
+                    </div>
+
+                    <form class="contact-form">
+                        <div>
+                            <input type="text" class="name" placeholder="Name">
+                            <input type="text" class="email" placeholder="Email">
+                        </div>
+                        <div>
+                            <input type="text" class="message" placeholder="Message">
+                        </div>
+                    </form>
+                </div>
+
+                <button class="btn submit-btn">SEND</button>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal">
+            <div class="modal__box">
+                <div class="modal__box__heading">
+                    <h3 class="modal__box__title">
+                        <i class="fa-solid fa-suitcase"></i>
+                        Tickets
+                    </h3>
+                    <i class="mini-cls-btn fa-solid fa-xmark"></i>
+                </div>
+
+                <div class="modal__box__body">
+                    <label for="quantity">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Tickets, $15 per person
+                    </label>
+                    <input name="quantity" type="text" class="modal__box__body__input" placeholder="How many?">
+
+                    <label for="email">
+                        <i class="fa-solid fa-user"></i>
+                        Send To
+                    </label>
+                    <input name="email" type="email" class="modal__box__body__input" placeholder="Send to">
+
+                    <button class="btn btn-pay">
+                        PAY
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                </div>
+
+                <div class="modal__box__footer">
+                    <p class="help">Need <a href="">help?</a></p>
+                    <button class="btn close-btn">
+                        Close
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div id="footer">
+            <img src="./assets/img/footer/map.jpg" alt="" class="footer__img">
+            <div class="footer__body">
+                <div class="footer__social-network">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-square-snapchat"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <p class="author">Powered by <a title="Đến trang chủ của tôi"
+                        href="https://thanhcanh203c.github.io/library/">Thanh Cảnh</a></p>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/buyEvent.js"></script>
+    <script src="./assets/js/menu.js"></script>
+</body>
+
+</html>
