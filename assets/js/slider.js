@@ -5,40 +5,36 @@ const heading = document.querySelector('.slider__heading');
 const desc = document.querySelector('.slider__desc');
 
 const slider = {
-    img: {
-        imgSrc : [
-            './assets/img/slider/chicago.jpg',
-            './assets/img/slider/la.jpg',
-            './assets/img/slider/ny.jpg'
-        ],
-        imgText : [
-            {
-                heading: 'Chicago',
-                desc: "Thank you, Chicago - A night we won't forget."
-            },
-            {
-                heading: 'Los Angeles',
-                desc: "We had the best time playing at Venice Beach!"
-            },
-            {
-                heading: 'New York',
-                desc: "The atmosphere in New York is lorem ipsum."
-            }
-        ]
-    },
+    data = [
+        {
+            heading: 'Chicago',
+            desc: "Thank you, Chicago - A night we won't forget.",
+            path: "./assets/img/slider/chicago.jpg"
+        },
+        {
+            heading: 'Los Angeles',
+            desc: "We had the best time playing at Venice Beach!",
+            path: "./assets/img/slider/la.jpg"
+        },
+        {
+            heading: 'New York',
+            desc: "The atmosphere in New York is lorem ipsum.",
+            path: "./assets/img/slider/ny.jpg"
+        }
+    ],
     index: 0,
 
     next() {
         this.index++;
-        if (this.index > this.img.imgSrc.length-1) {
+        if (this.index > this.data.length-1) {
             this.index = 0;
         }
     },
 
     update() {
-        image.src = this.img.imgSrc[this.index];
-        heading.innerText = this.img.imgText[this.index].heading;
-        desc.innerText = this.img.imgText[this.index].desc;
+        image.src = this.data[this.index].path;
+        heading.innerText = this.data[this.index].heading;
+        desc.innerText = this.data[this.index].desc;
     },
 
     start() {
