@@ -5,7 +5,7 @@ const heading = document.querySelector('.slider__heading');
 const desc = document.querySelector('.slider__desc');
 
 const slider = {
-    data = [
+    data: [
         {
             heading: 'Chicago',
             desc: "Thank you, Chicago - A night we won't forget.",
